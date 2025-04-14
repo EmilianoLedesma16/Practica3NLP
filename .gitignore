@@ -1,1 +1,20 @@
 /Practica3
+# === ENTORNO VIRTUAL ===
+venv/
+
+# === CACHÉS DE PYTHON ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === ARCHIVOS TEMPORALES / BACKUPS ===
+*.bak
+*.tmp
+
+# === ARCHIVOS DEL SISTEMA ===
+.DS_Store
+Thumbs.db
+
+# === ARCHIVOS DE VS CODE ===
+.vscode/
