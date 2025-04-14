@@ -30,10 +30,35 @@ vectorizadores = {
 
 # === 4. Modelos de clasificación === (Omi si ves esto eres gay)
 clasificadores = {
-    'Naive Bayes': MultinomialNB(),
-    'Regresión Logística': LogisticRegression(max_iter=300),
-    'MLP': MLPClassifier(hidden_layer_sizes=(200, 100), max_iter=300),
-    'SVM': SVC()
+    # Bayes con menor suavizado, se recomiendan valores de entre 0.1-1.0
+    'Naive Bayes': MultinomialNB(
+        alpha = 0.1
+    ),
+    
+    #Regresión logística con una mayor iteración y menor regularización
+    'Regresión Logística': LogisticRegression(
+        max_iter = 600,
+        C = 2.0,
+        solver = 'lbfgs'
+    ),
+    
+    #Perceptrón Multicapa con capas más profundad y early stopping
+    'MLP': MLPClassifier(
+        hidden_layer_sizes = (300, 150), #se definen en este caso dos capas para la red neuronal
+        activation = 'relu',
+        solver = 'adam',
+        learning_rate_init = 0.0005,        
+        max_iter = 600,
+        early_stopping = False,
+        random_state = 42
+    ),
+    
+    #SVM con kernel lineal y menor regularización
+    'SVM': SVC(
+        kernel = 'linear',
+        C = 2.0,
+        max_iter = 2000
+    )
 }
 
 # === 5. Entrenar, predecir y evaluar === (Rodas se la come)
