@@ -56,7 +56,7 @@ clasificadores = {
     #SVM con kernel lineal y menor regularización
     'SVM': SVC(
         kernel = 'linear',
-        C = 2.0,
+        C = 1.0,
         max_iter = 2000
     )
 }

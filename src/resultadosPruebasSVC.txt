@@ -1,0 +1,11 @@
+Probando SVC con vectorización: binario
+Mejor C: 0.1
+Mejor F1-macro score: 0.8905389094009518
+
+Probando SVC con vectorización: frecuencia
+Mejor C: 0.1
+Mejor F1-macro score: 0.8992788706391647
+
+Probando SVC con vectorización: tfidf
+Mejor C: 1.0
+Mejor F1-macro score: 0.9061287266924041
