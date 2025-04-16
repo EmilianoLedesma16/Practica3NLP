@@ -1,0 +1,9 @@
+Probando con vectorización: binario
+Mejor C:  0.1
+Mejor score:  0.9091827690105132
+Probando con vectorización: frecuencia
+Mejor C:  0.1
+Mejor score:  0.9026795728912994
+Probando con vectorización: tfidf
+Mejor C:  5.0
+Mejor score:  0.8933343336679158

@@ -28,7 +28,7 @@ vectorizadores = {
     'TF-IDF': TfidfVectorizer()
 }
 
-# === 4. Modelos de clasificación === (Omi si ves esto eres gay)
+# === 4. Modelos de clasificación ===
 clasificadores = {
     # Bayes con menor suavizado, se recomiendan valores de entre 0.1-1.0
     'Naive Bayes': MultinomialNB(
@@ -38,7 +38,7 @@ clasificadores = {
     #Regresión logística con una mayor iteración y menor regularización
     'Regresión Logística': LogisticRegression(
         max_iter = 600,
-        C = 2.0,
+        C = 0.1,
         solver = 'lbfgs'
     ),
     
@@ -47,7 +47,7 @@ clasificadores = {
         hidden_layer_sizes = (300, 150), #se definen en este caso dos capas para la red neuronal
         activation = 'relu',
         solver = 'adam',
-        learning_rate_init = 0.0005,        
+        learning_rate_init = 0.001,        
         max_iter = 600,
         early_stopping = False,
         random_state = 42

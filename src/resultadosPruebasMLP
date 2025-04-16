@@ -1,0 +1,11 @@
+Probando con vectorización: binario
+Mejores parámetros: {'clf__activation': 'relu', 'clf__hidden_layer_sizes': (300, 150), 'clf__learning_rate_init': 0.001}
+Mejor F1-macro score: 0.886732013352062
+
+Probando con vectorización: frecuencia
+Mejores parámetros: {'clf__activation': 'relu', 'clf__hidden_layer_sizes': (300, 150), 'clf__learning_rate_init': 0.001}
+Mejor F1-macro score: 0.8806849392353733
+
+Probando con vectorización: tfidf
+Mejores parámetros: {'clf__activation': 'tanh', 'clf__hidden_layer_sizes': (300, 150), 'clf__learning_rate_init': 0.0005}
+Mejor F1-macro score: 0.8771563302597783
